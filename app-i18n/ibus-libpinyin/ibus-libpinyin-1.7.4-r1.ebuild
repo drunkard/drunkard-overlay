@@ -21,7 +21,7 @@ IUSE="boost opencc lua"
 DEPEND="sys-apps/sed"
 RDEPEND=">=app-i18n/ibus-1.5.4[python,${PYTHON_USEDEP}]
 	dev-python/pygtk[${PYTHON_USEDEP}]
-	>=app-i18n/libpinyin-1.0.0
+	>=app-i18n/libpinyin-1.2.91
 	>=app-i18n/opencc-1.0.0
 	app-i18n/pyzy
 	boost? ( >=dev-libs/boost-1.39 )
