@@ -46,6 +46,7 @@ src_configure() {
 	econf $(use_with doc doxygen) \
 		--enable-ld-version-script \
 		$(usex gtk3 --with-gtk-version={3,2})
+		# --enable-orig-gtk2-immodule --enable-orig-gtk3-immodule \
 }
 
 src_compile() {
