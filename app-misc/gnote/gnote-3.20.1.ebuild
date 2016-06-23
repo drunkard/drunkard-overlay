@@ -65,7 +65,7 @@ src_prepare() {
 src_configure() {
 	gnome2_src_configure \
 		--disable-static \
-		$(use_enable debug) \
+		$(use_enable debug)
 }
 
 src_install() {
