@@ -8,10 +8,8 @@ inherit eutils gnome2-utils pax-utils unpacker xdg-utils
 
 DESCRIPTION="Netease cloud music client"
 HOMEPAGE="http://music.163.com"
-COMMON_URI="http://cdimage.deepin.com/applications/netease-cloud-music"
-MY_PN=${PN//-/_}
 SRC_URI="
-amd64? ( ${COMMON_URI}/64/${MY_PN}_${PV}_amd64_binary.tar.xz )
+amd64? ( http://d1.music.126.net/dmusic/${PN}_${PV}_amd64_ubuntu.deb )
 "
 
 LICENSE=""
