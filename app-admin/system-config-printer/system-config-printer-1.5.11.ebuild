@@ -14,7 +14,7 @@ HOMEPAGE="http://cyberelk.net/tim/software/system-config-printer/"
 SRC_URI="https://github.com/zdohnal/${PN}/releases/download/${PV}/${P}.tar.xz"
 
 LICENSE="GPL-2"
-KEYWORDS="~alpha amd64 ~arm ~arm64 ~ia64 ppc ppc64 ~sh ~sparc x86"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~ia64 ~ppc ~ppc64 ~sh ~sparc ~x86"
 SLOT="0"
 
 IUSE="doc gnome-keyring policykit"
@@ -56,9 +56,6 @@ DEPEND="${RDEPEND}
 	virtual/pkgconfig
 	doc? ( dev-python/epydoc[${PYTHON_USEDEP}] )
 "
-
-# Bug 471472
-MAKEOPTS+=" -j1"
 
 pkg_setup() {
 	python-single-r1_pkg_setup
