@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_4,3_5,3_6} )
+PYTHON_COMPAT=( python3_{4,5,6} )
 PYTHON_REQ_USE="xml"
 
 inherit gnome2 python-single-r1 systemd versionator
@@ -54,7 +54,7 @@ DEPEND="${RDEPEND}
 	dev-util/intltool
 	sys-devel/gettext
 	virtual/pkgconfig
-	doc? ( dev-python/epydoc[${PYTHON_USEDEP}] )
+	doc? ( dev-python/epydoc )
 "
 
 pkg_setup() {
