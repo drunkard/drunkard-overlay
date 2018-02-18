@@ -8,7 +8,7 @@ inherit gnome2
 
 DESCRIPTION="Image viewer and browser for Gnome"
 HOMEPAGE="https://wiki.gnome.org/Apps/gthumb"
-SRC_URI="https://ftp.gnome.org/pub/GNOME/sources/${PN}/3.6/${P}.tar.xz"
+SRC_URI="https://ftp.gnome.org/pub/GNOME/sources/${PN}/${PV%.*}/${P}.tar.xz"
 
 LICENSE="GPL-2+"
 SLOT="0"
