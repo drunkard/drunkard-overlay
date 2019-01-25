@@ -21,6 +21,7 @@ DEPEND="
 	dev-libs/boost:=
 	dev-libs/glib:2
 	dev-libs/gmp:0=
+	dev-libs/libzip
 	dev-libs/mpfr:0=
 	dev-qt/qtconcurrent:5
 	dev-qt/qtcore:5
