@@ -1,0 +1,13 @@
+diff --git a/configure.ac b/configure.ac
+index be5b28b4b80f676ac810970e8c39984a94b34b8c..12df80ad3ff979bd919a875c2c6b306f2523ed03 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -95,7 +95,7 @@ AC_ARG_ENABLE(gpg-check,
+ 	DO_CHECK=$enableval, DO_CHECK=yes)
+ 
+ if test	"$DO_CHECK" = "yes"; then
+-	accepted_versions="1.2 1.4 2.0 2.1 2.2"
++	accepted_versions="1.2 1.4 2.0 2.1 2.2 2.3"
+ 	AC_PATH_PROGS(GNUPG, [gpg gpg2], no)
+ 	AC_DEFINE_UNQUOTED(GNUPG, "$GNUPG", [Path to gpg executable.])
+ 	ok="no"
